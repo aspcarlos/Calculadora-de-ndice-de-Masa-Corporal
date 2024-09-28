@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="BMIDemo.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    BackgroundColor="Black">
+
+    <VerticalStackLayout
+        Margin="25"
+        Spacing="25"
+        VerticalOptions="Center">
+        <Label
+            FontAttributes="Bold"
+            FontSize="40"
+            HorizontalTextAlignment="Center"
+            Text="BMI Calculator"
+            TextColor="#CCCCCC" />
+        <Entry
+            x:Name="Peso"
+            BackgroundColor="#2A2A2A"
+            Keyboard="Numeric"
+            Placeholder="Peso en Kilogramos"
+            PlaceholderColor="#7d7c7c"
+            TextColor="#CCCCCC" />
+        <Entry
+            x:Name="Altura"
+            BackgroundColor="#2A2A2A"
+            Keyboard="Numeric"
+            Placeholder="Altura en Centimetros"
+            PlaceholderColor="#7d7c7c"
+            TextColor="#CCCCCC" />
+        <Entry
+            x:Name="Indice"
+            BackgroundColor="#2A2A2A"
+            IsEnabled="False"
+            Placeholder="Tu Índice de Masa Corporal"
+            PlaceholderColor="#7d7c7c"
+            TextColor="#CCCCCC" />
+        <!--  En el boton creamos el evento Clicked que tendra en nombre "Button_Clicked" para asignarle funciones  -->
+        <Button
+            BackgroundColor="#7d7c7c"
+            Clicked="Button_Clicked"
+            Text="CALCULAR"
+            TextColor="White" />
+    </VerticalStackLayout>
+
+
+</ContentPage>
